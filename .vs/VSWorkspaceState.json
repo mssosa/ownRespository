@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\MELI",
-    "\\MELI\\MELI.Test"
+    "\\MELI\\MELI.Aplication.Test",
+    "\\MELI\\MELI.Domain.Test",
+    "\\MELI\\MELI.Infraestructure",
+    "\\MELI\\MELI.Infraestructure\\EntifyFramwork",
+    "\\MELI\\MELI.Infraestructure\\Repositories",
+    "\\MELI\\MELI.WebApi",
+    "\\MELI\\MELI.WebApi.Test",
+    "\\MELI\\MELI.WebApi\\Models"
   ],
-  "SelectedNode": "\\MELI",
+  "SelectedNode": "\\MELI\\MELI.WebApi.Test\\WebApiTests.cs",
   "PreviewInSolutionExplorer": false
 }
