@@ -14,11 +14,19 @@ namespace MELI.WebApi.Controllers
     public class MutantController : ControllerBase
     {
         public IIsMutant Mutant { get; }
-
+        /// <summary>
+        /// Constructor with DI of IISMutant
+        /// </summary>
+        /// <param name="mutant"></param>
         public MutantController(IIsMutant mutant)
         {
             Mutant = mutant;
         }
+        /// <summary>
+        /// Api spoced to web that receipt an object in JSON
+        /// </summary>
+        /// <param name="receipt"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult> Post(ReceiptDNA receipt)
         {

@@ -13,11 +13,19 @@ namespace MELI.WebApi.Controllers
     public class StatsController : ControllerBase
     {
         public IStat Stat { get; }
-
+        /// <summary>
+        /// Constructor with DI
+        /// </summary>
+        /// <param name="stat"></param>
         public StatsController(IStat stat)
         {
             Stat = stat;
         }
+        /// <summary>
+        /// Public method for api. It allow get statistics
+        /// by get method
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult> GetStats()
         {

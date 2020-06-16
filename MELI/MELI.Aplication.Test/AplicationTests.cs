@@ -11,7 +11,7 @@ using Xunit;
 
 namespace MELI.Aplication.Test
 {
-    public class UnitTest1
+    public class AplicationTests
     {
         private const string ConnectionString = "Server=.\\SQLExpress;Database=Meli;Trusted_Connection=True;MultipleActiveResultSets=true";
 

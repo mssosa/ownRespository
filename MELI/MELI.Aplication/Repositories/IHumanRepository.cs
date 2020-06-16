@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MELI.Aplication.Repositories
 {
+    /// <summary>
+    /// A contract for repositories with methods needed
+    /// </summary>
     public interface IHumanRepository
     {
         Task<List<Human>> GetAll();

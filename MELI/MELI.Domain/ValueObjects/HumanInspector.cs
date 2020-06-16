@@ -5,14 +5,23 @@ using System.Text;
 
 namespace MELI.Domain.ValueObjects
 {
+    /// <summary>
+    /// Class especialized for inspect and dected mutants
+    /// </summary>
     public class HumanInspector
     {
+        /// <summary>
+        /// Public method for know if a human is mutant
+        /// only with his/her DNA (as string)
+        /// </summary>
+        /// <param name="human">Human for evaluate</param>
+        /// <returns></returns>
         public static bool IsMutant(Human human)
         {
             var dna = human.DnaArray;
             ///CAMBIAR!
-            int valor = dna[0].Length;
-            char[,] arrayBorrar = new char[valor, valor];
+            int size = dna[0].Length;
+            char[,] arrayToEvaluate = new char[size, size];
             int i = 0;
             int j = 0;
             foreach (var item in dna)
@@ -22,7 +31,7 @@ namespace MELI.Domain.ValueObjects
                 {
                     if (ch != ',')
                     {
-                        arrayBorrar[i, j] = ch;
+                        arrayToEvaluate[i, j] = ch;
 
                     }
                     j++;
@@ -33,14 +42,14 @@ namespace MELI.Domain.ValueObjects
             //horizaontal
             int countIsMutant = 0;
             #region OLD CODE
-            var h = ReadHorizontal(ref arrayBorrar, valor);
+            var h = ReadHorizontal(ref arrayToEvaluate, size);
             if (h > 0)
                 countIsMutant += h;
             //If there are 2 horizontal pattern is Mutant and doesn't need to follow trying to determinated
             if (countIsMutant < 2)
             {
                 //vertical
-                var v = ReadVertical(ref arrayBorrar, valor);
+                var v = ReadVertical(ref arrayToEvaluate, size);
                 if (v > 0)
                     countIsMutant += v;
             }
@@ -48,7 +57,7 @@ namespace MELI.Domain.ValueObjects
             if (countIsMutant < 2)
             {
                 //oblicuo
-                var o = ReadObliquos(ref arrayBorrar, valor);
+                var o = ReadObliquos(ref arrayToEvaluate, size);
                 if (o > 0)
                     countIsMutant += o;
 
@@ -75,7 +84,13 @@ namespace MELI.Domain.ValueObjects
             //CALCULATE
             return (bool)human.IsMutant;
         }
-        private static int ReadObliquos(ref char[,] arrayBorrar, int valor)
+        /// <summary>
+        /// Method for read OBLIQUOSLY in array of DNA
+        /// </summary>
+        /// <param name="arrayToEvaluate">Array to evaluate</param>
+        /// <param name="size">size of array</param>
+        /// <returns>mutant pattern detected</returns>
+        private static int ReadObliquos(ref char[,] arrayToEvaluate, int size)
         {
             int IsMutant = 0;
             int countA = 0;
@@ -83,19 +98,19 @@ namespace MELI.Domain.ValueObjects
             int countC = 0;
             int countG = 0;
             //Cover bottom half
-            for (int x = 0; x < valor; x++)
+            for (int x = 0; x < size; x++)
             {
                 countA = 0;
                 countT = 0;
                 countC = 0;
                 countG = 0;
                 int z = x;
-                for (int y = 0; y < valor; y++)
+                for (int y = 0; y < size; y++)
                 {
 
-                    if (x < valor && y < valor)
+                    if (x < size && y < size)
                     {
-                        switch (arrayBorrar[x, y])
+                        switch (arrayToEvaluate[x, y])
                         {
                             case 'A':
                                 countA++;
@@ -137,19 +152,19 @@ namespace MELI.Domain.ValueObjects
             }
 
             //Cover top half -- y==1 becaus y=0 its just covered
-            for (int y = 1; y < valor; y++)
+            for (int y = 1; y < size; y++)
             {
                 countA = 0;
                 countT = 0;
                 countC = 0;
                 countG = 0;
                 int z = y;
-                for (int x = 0; x < valor; x++)
+                for (int x = 0; x < size; x++)
                 {
 
-                    if (x < valor && y < valor)
+                    if (x < size && y < size)
                     {
-                        switch (arrayBorrar[x, y])
+                        switch (arrayToEvaluate[x, y])
                         {
                             case 'A':
                                 countA++;
@@ -192,22 +207,28 @@ namespace MELI.Domain.ValueObjects
             //no encontrado
             return IsMutant;
         }
-        private static int ReadVertical(ref char[,] arrayBorrar, int valor)
+        /// <summary>
+        /// Method for read VERTICALY in array of DNA
+        /// </summary>
+        /// <param name="arrayToEvaluate">Array to evaluate</param>
+        /// <param name="size">size of array</param>
+        /// <returns>mutant pattern detected</returns>
+        private static int ReadVertical(ref char[,] arrayToEvaluate, int size)
         {
             int IsMutant = 0;
             int countA = 0;
             int countT = 0;
             int countC = 0;
             int countG = 0;
-            for (int x = 0; x < valor; x++)
+            for (int x = 0; x < size; x++)
             {
                 countA = 0;
                 countT = 0;
                 countC = 0;
                 countG = 0;
-                for (int y = 0; y < valor; y++)
+                for (int y = 0; y < size; y++)
                 {
-                    switch (arrayBorrar[x, y])
+                    switch (arrayToEvaluate[x, y])
                     {
                         case 'A':
                             countA++;
@@ -248,23 +269,29 @@ namespace MELI.Domain.ValueObjects
             return IsMutant;
 
         }
-        private static int ReadHorizontal(ref char[,] arrayBorrar, int valor)
+        /// <summary>
+        /// Method for read HORIZONTALY in array of DNA
+        /// </summary>
+        /// <param name="arrayToEvaluate">Array to evaluate</param>
+        /// <param name="size">size of array</param>
+        /// <returns>mutant pattern detected</returns>
+        private static int ReadHorizontal(ref char[,] arrayToEvaluate, int size)
         {
             int IsMutant = 0;
             int countA = 0;
             int countT = 0;
             int countC = 0;
             int countG = 0;
-            for (int y = 0; y < valor; y++)
+            for (int y = 0; y < size; y++)
             {
                 //reinicio
                 countA = 0;
                 countT = 0;
                 countC = 0;
                 countG = 0;
-                for (int x = 0; x < valor; x++)
+                for (int x = 0; x < size; x++)
                 {
-                    switch (arrayBorrar[x, y])
+                    switch (arrayToEvaluate[x, y])
                     {
                         case 'A':
                             countA++;

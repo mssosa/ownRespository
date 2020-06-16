@@ -7,12 +7,23 @@ using System.Text;
 
 namespace MELI.Domain.Humans
 {
+    /// <summary>
+    /// Class base of domain
+    /// </summary>
     public class Human
     {
+        /// <summary>
+        /// Empty constructor for factory uses.
+        /// </summary>
         public Human()
         {
 
         }
+        /// <summary>
+        /// Constructor for receipt and array and parsed to
+        /// string
+        /// </summary>
+        /// <param name="_dna"></param>
         public Human(string[] _dna)
         {
             //Send to transform
@@ -27,6 +38,9 @@ namespace MELI.Domain.Humans
         /// </summary>
         public bool? IsMutant { get; set; }
 
+        /// <summary>
+        /// Property for manage array
+        /// </summary>
         [NotMapped]
         public string[] DnaArray
         {

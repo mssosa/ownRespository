@@ -7,6 +7,9 @@ using System.Text;
 
 namespace MELI.Aplication
 {
+    /// <summary>
+    /// Factory Pattern for inversion of control.
+    /// </summary>
     public class Factory
     {
         public static Human CreateHuman()

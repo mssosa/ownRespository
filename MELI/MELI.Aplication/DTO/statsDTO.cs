@@ -4,9 +4,11 @@ using System.Text;
 
 namespace MELI.Aplication.DTO
 {
+    /// <summary>
+    /// Class to return statistics values in JSON format
+    /// </summary>
     public class StatsDTO
     {
-
         public StatsDTO(int quantityHumans, int quantityMutants, decimal ratio)
         {
             QuantityHumans = quantityHumans;

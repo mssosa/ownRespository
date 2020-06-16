@@ -1,6 +1,7 @@
 using MELI.Domain.Humans;
 using MELI.Domain.ValueObjects;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace MELI.Domain.Test
@@ -64,5 +65,37 @@ namespace MELI.Domain.Test
         {
             Assert.ThrowsAny<Exception>(() => HumanValidator.ValidateDNA(dna));
         }
+
+        [Theory]
+        [InlineData(100,40,0.4)]
+        public void ValidationStatistics(int qH, int qM,decimal r)
+        {
+            List<Human> listInvented = new List<Human>();
+            for (int i = 0; i < qH; i++)
+            {
+                string[] dna=new string[]{"AAAA","ACCC", "ACCC", "ACCC" };
+                var m = new Human(dna);
+                if (i<40)
+                {
+                    m.IsMutant = true;
+                }
+                else
+                {
+                    m.IsMutant = false;
+                }
+                listInvented.Add(m);
+            }
+            //simulation list
+            Statistic s = new Statistic();
+            var rdo = s.Evaluate(listInvented);
+            Assert.True(
+                rdo.quantityHumans == qH
+                &&
+                rdo.quantityMutants == qM
+                &&
+                rdo.Ratio == r
+                ); 
+        }
+
     }
 }
