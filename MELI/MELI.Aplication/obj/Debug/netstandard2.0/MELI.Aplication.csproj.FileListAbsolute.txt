@@ -1,0 +1,12 @@
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\bin\Debug\netstandard2.0\MELI.Aplication.deps.json
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\bin\Debug\netstandard2.0\MELI.Aplication.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\bin\Debug\netstandard2.0\MELI.Aplication.pdb
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\bin\Debug\netstandard2.0\MELI.Domain.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\bin\Debug\netstandard2.0\MELI.Domain.pdb
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.csprojAssemblyReference.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.AssemblyInfoInputs.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.AssemblyInfo.cs
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.csproj.CoreCompileInputs.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.csproj.CopyComplete
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Aplication\obj\Debug\netstandard2.0\MELI.Aplication.pdb

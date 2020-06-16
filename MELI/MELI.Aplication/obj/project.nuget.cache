@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eDmTqkPpQM7DzXFNXMnIXNJMp5dLHlfbFWiNx+ejOkgOEJxv8zD/NSP4yjZFHjEf8p+0kWRv7zjVybmLpE/tZg==",
+  "success": true,
+  "projectFilePath": "D:\\Laburo\\Personal\\ProyectosGitHub\\MELI\\MELI.Aplication\\MELI.Aplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lic_m\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lic_m\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\lic_m\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

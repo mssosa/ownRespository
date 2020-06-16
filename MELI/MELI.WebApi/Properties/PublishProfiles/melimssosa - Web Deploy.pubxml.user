@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARN7Lqvr+2U+SZyVq1NTl5wAAAAACAAAAAAAQZgAAAAEAACAAAABAl271fiAQ17325SUBeoNjcdmEbEGCKeNZ0cq1ZmDNwAAAAAAOgAAAAAIAACAAAAAYwAUcxTmNFcewfuHkmKNzxEP1MN4JXTDX+RKjkuTMtIAAAAC2GM9EAfm4KGzCI9h9vTDxjOM7JHwW9phauBadp9N9ztovGcNK9Ok+LXYPT18LA0TDlwJLjc7WJcnTvvsJZ6RKXEKZh51we6wBm8/74BQnf6BrilcRlI/BUFN9ZuXMXwl2HABRxAF/0w5wqM5JRLXk7Kv1iPkStbUQ9CBvZATM+UAAAAC9pugjkgOIUqslOmLfpBuQOnfZ8+CKysd2VyEI9ZIcBuJeSZCrVwvOrg29NlOcIECvi1Sk7GpNTI1nNc9SMo7r</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="MeliConnection">
+      <Value>Server=tcp:mssserver-1988.database.windows.net,1433%3bInitial Catalog=Meli%3bPersist Security Info=False%3bUser ID=msadmin%3bPassword=DarknesS33761160%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

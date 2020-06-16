@@ -1,0 +1,14 @@
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Infraestructure.deps.json
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Infraestructure.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Infraestructure.pdb
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Aplication.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Domain.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Aplication.pdb
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\bin\Release\netstandard2.0\MELI.Domain.pdb
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.csprojAssemblyReference.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.AssemblyInfoInputs.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.AssemblyInfo.cs
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.csproj.CoreCompileInputs.cache
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.csproj.CopyComplete
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.dll
+D:\Laburo\Personal\ProyectosGitHub\MELI\MELI.Infraestructure\obj\Release\netstandard2.0\MELI.Infraestructure.pdb
