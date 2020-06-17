@@ -37,21 +37,32 @@ namespace MELI.Infraestructure.Repositories
             await Db.SaveChangesAsync();
         }
         /// <summary>
-        /// List all humans 
+        /// Get a List (Optimized) of all humans 
         /// </summary>
         /// <returns>List of Humans</returns>
         public async Task<List<Human>> GetAll()
         {
-            return await Db.Humans.ToListAsync();
+            return await Db.Humans
+                .Select(x => new Human
+                {
+                    IsMutant = x.IsMutant
+                }).ToListAsync()
+                 ;
         }
         /// <summary>
-        /// Search human by DNA
+        /// Search human by DNA (optimized)
         /// </summary>
         /// <param name="dna"></param>
-        /// <returns></returns>
+        /// <returns>Human only with isMutant item</returns>
         public async Task<Human> GetByDNA(string dna)
         {
-            return await Db.Humans.Where(x => x.DNA == dna).FirstOrDefaultAsync();
+            return await Db.Humans
+                .Where(x => x.DNA == dna)
+                .Select(x => new Human
+                {
+                    IsMutant = x.IsMutant
+                }).FirstOrDefaultAsync()
+                 ;
         }
         ///Implementation of IDisposable
         public void Dispose()

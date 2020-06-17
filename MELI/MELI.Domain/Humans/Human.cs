@@ -8,7 +8,7 @@ using System.Text;
 namespace MELI.Domain.Humans
 {
     /// <summary>
-    /// Class base of domain
+    /// Class base for domain
     /// </summary>
     public class Human
     {
@@ -20,7 +20,7 @@ namespace MELI.Domain.Humans
 
         }
         /// <summary>
-        /// Constructor for receipt and array and parsed to
+        /// Constructor for receipt an array and parsed to
         /// string
         /// </summary>
         /// <param name="_dna"></param>

@@ -11,13 +11,13 @@ namespace MELI.Aplication.DTO
     {
         public StatsDTO(int quantityHumans, int quantityMutants, decimal ratio)
         {
-            QuantityHumans = quantityHumans;
-            QuantityMutants = quantityMutants;
-            Ratio = ratio;
+            count_human_dna = quantityHumans;
+            count_mutant_dna = quantityMutants;
+            this.ratio = ratio;
         }
 
-        public int QuantityMutants { get; set; }
-        public int QuantityHumans { get; set; }
-        public decimal Ratio { get; set; }
+        public int count_mutant_dna { get; set; }
+        public int count_human_dna { get; set; }
+        public decimal ratio { get; set; }
     }
 }
